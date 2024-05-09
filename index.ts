@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer"
 import {differenceInSeconds} from "date-fns"
 import { se } from "date-fns/locale"
