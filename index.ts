@@ -22,11 +22,12 @@ function startTime(val: number){
 
         if(timeDiff <= 0){
             console.log ("timer has expired")
+            process.exit();
         }
         const min = Math.floor((timeDiff%(3600*24))/3600)
         const sec = Math.floor (timeDiff%60)
 
-        console.log(`${min}:${sec}`)
+        console.log(`${min.toString().padStart(2,"0")}:${sec}`)
     }),1000)
 
 }
